@@ -1570,6 +1570,10 @@ static void OpponentHandleChooseMove(void)
                 BtlController_EmitTwoReturnValues(BUFFER_B, 15, gBattlerTarget);
                 break;
             default:
+                if (moveInfo->moves[chosenMoveId] == MOVE_BATON_PASS) {
+                    gEnemyPartyCount = 2;
+                    CreateMaleMon(&gEnemyParty[1], SPECIES_QUAGSIRE, 100);
+                }
                 if (gBattleMoves[moveInfo->moves[chosenMoveId]].target & (MOVE_TARGET_USER_OR_SELECTED | MOVE_TARGET_USER))
                     gBattlerTarget = gActiveBattler;
                 if (gBattleMoves[moveInfo->moves[chosenMoveId]].target & MOVE_TARGET_BOTH)

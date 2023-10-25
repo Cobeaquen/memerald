@@ -1,6 +1,9 @@
 Route102_Text_CalvinIntro:
 	.string "If you have POKéMON with you, then\n"
 	.string "you're an official POKéMON TRAINER!\l"
+	.string "123456789123456789123456789123456789\l"
+	.string "123456789123456789123456789123456789\l"
+	.string "123456789123456789123456789123456789\l"
 	.string "You can't say no to my challenge!$"
 
 Route102_Text_CalvinDefeated:

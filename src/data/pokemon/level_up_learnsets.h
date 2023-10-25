@@ -2992,6 +2992,7 @@ static const u16 sSlugmaLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_YAWN),
     LEVEL_UP_MOVE( 1, MOVE_SMOG),
     LEVEL_UP_MOVE( 8, MOVE_EMBER),
+    LEVEL_UP_MOVE(12, MOVE_SUGMA),
     LEVEL_UP_MOVE(15, MOVE_ROCK_THROW),
     LEVEL_UP_MOVE(22, MOVE_HARDEN),
     LEVEL_UP_MOVE(29, MOVE_AMNESIA),
@@ -3676,6 +3677,7 @@ static const u16 sBlazikenLevelUpLearnset[] = {
 static const u16 sMudkipLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
+    LEVEL_UP_MOVE( 1, MOVE_SUGMA),
     LEVEL_UP_MOVE( 6, MOVE_MUD_SLAP),
     LEVEL_UP_MOVE(10, MOVE_WATER_GUN),
     LEVEL_UP_MOVE(15, MOVE_BIDE),
