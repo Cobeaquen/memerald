@@ -1344,7 +1344,12 @@ static const u8 sATypeMove_Table[NUMBER_OF_MON_TYPES][17] =
     [TYPE_PSYCHIC]  = _("a PSYCHIC move"),
     [TYPE_ICE]      = _("an ICE move"),
     [TYPE_DRAGON]   = _("a DRAGON move"),
-    [TYPE_DARK]     = _("a DARK move")
+    [TYPE_DARK]     = _("a DARK move"),
+    [TYPE_SUS]      = _("a SUS move"),
+    [TYPE_GAMER]    = _("a GAMER move"),
+    [TYPE_WARCRIME] = _("a WARCRIME move"),
+    [TYPE_RELIGION] = _("a RELIGION move"),
+    [TYPE_AUTIST]   = _("an AUTIST move")
 };
 
 const u8 gText_BattleTourney[] = _("BATTLE TOURNEY");

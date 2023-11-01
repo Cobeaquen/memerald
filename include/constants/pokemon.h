@@ -21,7 +21,12 @@
 #define TYPE_ICE              15
 #define TYPE_DRAGON           16
 #define TYPE_DARK             17
-#define NUMBER_OF_MON_TYPES   18
+#define TYPE_SUS              18
+#define TYPE_GAMER            19
+#define TYPE_WARCRIME         20
+#define TYPE_RELIGION         21
+#define TYPE_AUTIST           22
+#define NUMBER_OF_MON_TYPES   23
 
 // Pokemon egg groups
 #define EGG_GROUP_NONE          0
