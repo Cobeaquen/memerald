@@ -1814,6 +1814,8 @@ static u8 TryTakeMonItem(struct Pokemon *mon)
 {
     u16 item = GetMonData(mon, MON_DATA_HELD_ITEM);
 
+    AddBagItem(ITEM_TM01, 1);
+
     if (item == ITEM_NONE)
         return 0;
     if (AddBagItem(item, 1) == FALSE)

@@ -25,8 +25,9 @@
 #define TYPE_GAMER            19
 #define TYPE_WARCRIME         20
 #define TYPE_RELIGION         21
-#define TYPE_AUTIST           22
-#define NUMBER_OF_MON_TYPES   23
+#define TYPE_AUTISM           22
+#define TYPE_SHEDINJA         23
+#define NUMBER_OF_MON_TYPES   24
 
 // Pokemon egg groups
 #define EGG_GROUP_NONE          0

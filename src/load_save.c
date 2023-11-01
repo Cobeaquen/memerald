@@ -224,8 +224,6 @@ void LoadPlayerBag(void)
     // load player TMs and HMs.
     for (i = 0; i < BAG_TMHM_COUNT; i++)
         gLoadedSaveData.TMsHMs[i] = gSaveBlock1Ptr->bagPocket_TMHM[i];
-    
-    //gLoadedSaveData.TMsHMs[i] = { ITEM_TM01, 1 };
 
     // load player berries.
     for (i = 0; i < BAG_BERRIES_COUNT; i++)

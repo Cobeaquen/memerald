@@ -3436,7 +3436,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_FOCUS_PUNCH,
         .power = 150,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_SUS,
         .accuracy = 100,
         .pp = 20,
         .secondaryEffectChance = 0,
