@@ -4618,7 +4618,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_ROLLOUT,
         .power = 30,
-        .type = TYPE_FIRE,
+        .type = TYPE_SUS,
         .accuracy = 95,
         .pp = 20,
         .secondaryEffectChance = 0,
