@@ -822,6 +822,30 @@ static const union AnimCmd sSpriteAnim_TypeDark[] = {
     ANIMCMD_FRAME(TYPE_DARK * 8, 0, FALSE, FALSE),
     ANIMCMD_END
 };
+static const union AnimCmd sSpriteAnim_TypeSus[] = {
+    ANIMCMD_FRAME(TYPE_SUS * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeGamer[] = {
+    ANIMCMD_FRAME(TYPE_GAMER * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeWarcrime[] = {
+    ANIMCMD_FRAME(TYPE_WARCRIME * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeReligion[] = {
+    ANIMCMD_FRAME(TYPE_RELIGION * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeAutism[] = {
+    ANIMCMD_FRAME(TYPE_AUTISM * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeShedinja[] = {
+    ANIMCMD_FRAME(TYPE_SHEDINJA * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
 static const union AnimCmd sSpriteAnim_CategoryCool[] = {
     ANIMCMD_FRAME((CONTEST_CATEGORY_COOL + NUMBER_OF_MON_TYPES) * 8, 0, FALSE, FALSE),
     ANIMCMD_END
@@ -861,6 +885,12 @@ static const union AnimCmd *const sSpriteAnimTable_MoveTypes[NUMBER_OF_MON_TYPES
     sSpriteAnim_TypeIce,
     sSpriteAnim_TypeDragon,
     sSpriteAnim_TypeDark,
+    sSpriteAnim_TypeSus,
+    sSpriteAnim_TypeGamer,
+    sSpriteAnim_TypeWarcrime,
+    sSpriteAnim_TypeReligion,
+    sSpriteAnim_TypeAutism,
+    sSpriteAnim_TypeShedinja,
     sSpriteAnim_CategoryCool,
     sSpriteAnim_CategoryBeauty,
     sSpriteAnim_CategoryCute,
@@ -904,6 +934,12 @@ static const u8 sMoveTypeToOamPaletteNum[NUMBER_OF_MON_TYPES + CONTEST_CATEGORIE
     [TYPE_ICE] = 14,
     [TYPE_DRAGON] = 15,
     [TYPE_DARK] = 13,
+    [TYPE_SUS] = 13,
+    [TYPE_GAMER] = 14,
+    [TYPE_WARCRIME] = 13,
+    [TYPE_RELIGION] = 13,
+    [TYPE_AUTISM] = 15,
+    [TYPE_SHEDINJA] = 14,
     [NUMBER_OF_MON_TYPES + CONTEST_CATEGORY_COOL] = 13,
     [NUMBER_OF_MON_TYPES + CONTEST_CATEGORY_BEAUTY] = 14,
     [NUMBER_OF_MON_TYPES + CONTEST_CATEGORY_CUTE] = 14,
