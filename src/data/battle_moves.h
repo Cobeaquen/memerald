@@ -17,7 +17,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_HIT,
         .power = 40,
-        .type = TYPE_NORMAL,
+        .type = TYPE_SUS,
         .accuracy = 100,
         .pp = 35,
         .secondaryEffectChance = 0,
@@ -147,7 +147,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_HIT,
         .power = 55,
-        .type = TYPE_NORMAL,
+        .type = TYPE_SUS,
         .accuracy = 100,
         .pp = 30,
         .secondaryEffectChance = 0,
@@ -160,7 +160,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_OHKO,
         .power = 1,
-        .type = TYPE_NORMAL,
+        .type = TYPE_WARCRIME,
         .accuracy = 30,
         .pp = 5,
         .secondaryEffectChance = 0,
@@ -238,7 +238,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_ROAR,
         .power = 0,
-        .type = TYPE_NORMAL,
+        .type = TYPE_GAMER,
         .accuracy = 100,
         .pp = 20,
         .secondaryEffectChance = 0,
@@ -407,7 +407,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_MULTI_HIT,
         .power = 15,
-        .type = TYPE_NORMAL,
+        .type = TYPE_AUTISM,
         .accuracy = 85,
         .pp = 20,
         .secondaryEffectChance = 0,
@@ -459,7 +459,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_TRAP,
         .power = 15,
-        .type = TYPE_NORMAL,
+        .type = TYPE_RELIGION,
         .accuracy = 85,
         .pp = 20,
         .secondaryEffectChance = 100,
@@ -511,7 +511,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_DEFENSE_DOWN,
         .power = 0,
-        .type = TYPE_NORMAL,
+        .type = TYPE_SUS,
         .accuracy = 100,
         .pp = 30,
         .secondaryEffectChance = 0,
@@ -550,7 +550,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_MULTI_HIT,
         .power = 14,
-        .type = TYPE_BUG,
+        .type = TYPE_WARCRIME,
         .accuracy = 85,
         .pp = 20,
         .secondaryEffectChance = 0,
@@ -589,7 +589,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_ATTACK_DOWN,
         .power = 0,
-        .type = TYPE_NORMAL,
+        .type = TYPE_GAMER,
         .accuracy = 100,
         .pp = 40,
         .secondaryEffectChance = 0,
@@ -615,7 +615,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_SLEEP,
         .power = 0,
-        .type = TYPE_NORMAL,
+        .type = TYPE_RELIGION,
         .accuracy = 55,
         .pp = 15,
         .secondaryEffectChance = 0,
@@ -693,7 +693,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_BURN_HIT,
         .power = 95,
-        .type = TYPE_FIRE,
+        .type = TYPE_WARCRIME,
         .accuracy = 100,
         .pp = 15,
         .secondaryEffectChance = 10,
@@ -862,7 +862,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_RECOIL,
         .power = 80,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_SUS,
         .accuracy = 80,
         .pp = 25,
         .secondaryEffectChance = 0,
@@ -992,7 +992,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_SOLAR_BEAM,
         .power = 120,
-        .type = TYPE_GRASS,
+        .type = TYPE_RELIGION,
         .accuracy = 100,
         .pp = 10,
         .secondaryEffectChance = 0,
@@ -1070,7 +1070,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_DRAGON_RAGE,
         .power = 1,
-        .type = TYPE_DRAGON,
+        .type = TYPE_AUTISM,
         .accuracy = 100,
         .pp = 10,
         .secondaryEffectChance = 0,
@@ -1174,7 +1174,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_OHKO,
         .power = 1,
-        .type = TYPE_GROUND,
+        .type = TYPE_GAMER,
         .accuracy = 30,
         .pp = 5,
         .secondaryEffectChance = 0,
@@ -1200,7 +1200,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_TOXIC,
         .power = 0,
-        .type = TYPE_POISON,
+        .type = TYPE_GAMER,
         .accuracy = 85,
         .pp = 10,
         .secondaryEffectChance = 100,
@@ -1343,7 +1343,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_DEFENSE_DOWN_2,
         .power = 0,
-        .type = TYPE_NORMAL,
+        .type = TYPE_AUTISM,
         .accuracy = 85,
         .pp = 40,
         .secondaryEffectChance = 0,
@@ -1356,7 +1356,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_EVASION_UP,
         .power = 0,
-        .type = TYPE_NORMAL,
+        .type = TYPE_SUS,
         .accuracy = 0,
         .pp = 15,
         .secondaryEffectChance = 0,
@@ -1382,7 +1382,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_DEFENSE_UP,
         .power = 0,
-        .type = TYPE_NORMAL,
+        .type = TYPE_SUS,
         .accuracy = 0,
         .pp = 30,
         .secondaryEffectChance = 0,
@@ -1486,7 +1486,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_HAZE,
         .power = 0,
-        .type = TYPE_ICE,
+        .type = TYPE_RELIGION,
         .accuracy = 0,
         .pp = 30,
         .secondaryEffectChance = 0,
@@ -1512,7 +1512,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_FOCUS_ENERGY,
         .power = 0,
-        .type = TYPE_NORMAL,
+        .type = TYPE_AUTISM,
         .accuracy = 0,
         .pp = 30,
         .secondaryEffectChance = 0,
@@ -1564,7 +1564,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_EXPLOSION,
         .power = 200,
-        .type = TYPE_NORMAL,
+        .type = TYPE_WARCRIME,
         .accuracy = 100,
         .pp = 5,
         .secondaryEffectChance = 0,
@@ -1590,7 +1590,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_PARALYZE_HIT,
         .power = 20,
-        .type = TYPE_GHOST,
+        .type = TYPE_SUS,
         .accuracy = 100,
         .pp = 30,
         .secondaryEffectChance = 30,
@@ -1694,7 +1694,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_SKULL_BASH,
         .power = 100,
-        .type = TYPE_NORMAL,
+        .type = TYPE_GAMER,
         .accuracy = 100,
         .pp = 15,
         .secondaryEffectChance = 0,
@@ -1785,7 +1785,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_PARALYZE,
         .power = 0,
-        .type = TYPE_NORMAL,
+        .type = TYPE_GAMER,
         .accuracy = 75,
         .pp = 30,
         .secondaryEffectChance = 0,
@@ -1824,7 +1824,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_MULTI_HIT,
         .power = 15,
-        .type = TYPE_NORMAL,
+        .type = TYPE_WARCRIME,
         .accuracy = 85,
         .pp = 20,
         .secondaryEffectChance = 0,
@@ -1837,7 +1837,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_ABSORB,
         .power = 20,
-        .type = TYPE_BUG,
+        .type = TYPE_SUS,
         .accuracy = 100,
         .pp = 15,
         .secondaryEffectChance = 0,
@@ -1993,7 +1993,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_EXPLOSION,
         .power = 250,
-        .type = TYPE_NORMAL,
+        .type = TYPE_WARCRIME,
         .accuracy = 100,
         .pp = 5,
         .secondaryEffectChance = 0,
@@ -2227,7 +2227,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_NIGHTMARE,
         .power = 0,
-        .type = TYPE_GHOST,
+        .type = TYPE_RELIGION,
         .accuracy = 100,
         .pp = 15,
         .secondaryEffectChance = 0,
@@ -2344,7 +2344,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_SPITE,
         .power = 0,
-        .type = TYPE_GHOST,
+        .type = TYPE_GAMER,
         .accuracy = 100,
         .pp = 10,
         .secondaryEffectChance = 0,
@@ -2370,7 +2370,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_PROTECT,
         .power = 0,
-        .type = TYPE_NORMAL,
+        .type = TYPE_GAMER,
         .accuracy = 0,
         .pp = 10,
         .secondaryEffectChance = 0,
@@ -2448,7 +2448,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_POISON_HIT,
         .power = 90,
-        .type = TYPE_POISON,
+        .type = TYPE_WARCRIME,
         .accuracy = 100,
         .pp = 10,
         .secondaryEffectChance = 30,
@@ -2474,7 +2474,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_ACCURACY_DOWN_HIT,
         .power = 65,
-        .type = TYPE_WATER,
+        .type = TYPE_WARCRIME,
         .accuracy = 85,
         .pp = 10,
         .secondaryEffectChance = 50,
@@ -2526,7 +2526,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_DESTINY_BOND,
         .power = 0,
-        .type = TYPE_GHOST,
+        .type = TYPE_SUS,
         .accuracy = 0,
         .pp = 5,
         .secondaryEffectChance = 0,
@@ -2591,7 +2591,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_LOCK_ON,
         .power = 0,
-        .type = TYPE_NORMAL,
+        .type = TYPE_AUTISM,
         .accuracy = 100,
         .pp = 5,
         .secondaryEffectChance = 0,
@@ -2604,7 +2604,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_RAMPAGE,
         .power = 90,
-        .type = TYPE_DRAGON,
+        .type = TYPE_GAMER,
         .accuracy = 100,
         .pp = 15,
         .secondaryEffectChance = 100,
@@ -2656,7 +2656,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_ATTACK_DOWN_2,
         .power = 0,
-        .type = TYPE_NORMAL,
+        .type = TYPE_RELIGION,
         .accuracy = 100,
         .pp = 20,
         .secondaryEffectChance = 0,
@@ -2773,7 +2773,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_ATTRACT,
         .power = 0,
-        .type = TYPE_NORMAL,
+        .type = TYPE_SUS,
         .accuracy = 100,
         .pp = 15,
         .secondaryEffectChance = 0,
@@ -2838,7 +2838,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_FRUSTRATION,
         .power = 1,
-        .type = TYPE_NORMAL,
+        .type = TYPE_GAMER,
         .accuracy = 100,
         .pp = 20,
         .secondaryEffectChance = 0,
@@ -2877,7 +2877,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_THAW_HIT,
         .power = 100,
-        .type = TYPE_FIRE,
+        .type = TYPE_RELIGION,
         .accuracy = 95,
         .pp = 5,
         .secondaryEffectChance = 50,
@@ -2890,7 +2890,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_MAGNITUDE,
         .power = 1,
-        .type = TYPE_GROUND,
+        .type = TYPE_GAMER,
         .accuracy = 100,
         .pp = 30,
         .secondaryEffectChance = 0,
@@ -3124,7 +3124,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_RAIN_DANCE,
         .power = 0,
-        .type = TYPE_WATER,
+        .type = TYPE_RELIGIONF,
         .accuracy = 0,
         .pp = 5,
         .secondaryEffectChance = 0,
@@ -3176,7 +3176,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_PSYCH_UP,
         .power = 0,
-        .type = TYPE_NORMAL,
+        .type = TYPE_RELIGION,
         .accuracy = 0,
         .pp = 10,
         .secondaryEffectChance = 0,
@@ -3267,7 +3267,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_BEAT_UP,
         .power = 10,
-        .type = TYPE_DARK,
+        .type = TYPE_WARCRIME,
         .accuracy = 100,
         .pp = 10,
         .secondaryEffectChance = 0,
@@ -3280,7 +3280,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_FAKE_OUT,
         .power = 40,
-        .type = TYPE_NORMAL,
+        .type = TYPE_GAMER,
         .accuracy = 100,
         .pp = 10,
         .secondaryEffectChance = 0,
@@ -3293,7 +3293,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_UPROAR,
         .power = 50,
-        .type = TYPE_NORMAL,
+        .type = TYPE_AUTISM,
         .accuracy = 100,
         .pp = 10,
         .secondaryEffectChance = 100,
@@ -3332,7 +3332,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_SWALLOW,
         .power = 0,
-        .type = TYPE_NORMAL,
+        .type = TYPE_SUS,
         .accuracy = 0,
         .pp = 10,
         .secondaryEffectChance = 0,
@@ -3371,7 +3371,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_TORMENT,
         .power = 0,
-        .type = TYPE_DARK,
+        .type = TYPE_WARCRIME,
         .accuracy = 100,
         .pp = 15,
         .secondaryEffectChance = 0,
@@ -3423,7 +3423,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_FACADE,
         .power = 70,
-        .type = TYPE_NORMAL,
+        .type = TYPE_RELIGION,
         .accuracy = 100,
         .pp = 20,
         .secondaryEffectChance = 0,
@@ -3462,7 +3462,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_FOLLOW_ME,
         .power = 0,
-        .type = TYPE_NORMAL,
+        .type = TYPE_SUS,
         .accuracy = 100,
         .pp = 20,
         .secondaryEffectChance = 0,
@@ -3514,7 +3514,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_HELPING_HAND,
         .power = 0,
-        .type = TYPE_NORMAL,
+        .type = TYPE_RELIGION,
         .accuracy = 100,
         .pp = 20,
         .secondaryEffectChance = 0,
@@ -3553,7 +3553,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_WISH,
         .power = 0,
-        .type = TYPE_NORMAL,
+        .type = TYPE_RELIGION,
         .accuracy = 100,
         .pp = 10,
         .secondaryEffectChance = 0,
@@ -3631,7 +3631,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_REVENGE,
         .power = 60,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_WARCRIME,
         .accuracy = 100,
         .pp = 10,
         .secondaryEffectChance = 0,
@@ -3657,7 +3657,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_YAWN,
         .power = 0,
-        .type = TYPE_NORMAL,
+        .type = TYPE_AUTISM,
         .accuracy = 100,
         .pp = 10,
         .secondaryEffectChance = 0,
@@ -3696,7 +3696,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_ERUPTION,
         .power = 150,
-        .type = TYPE_FIRE,
+        .type = TYPE_AUTISM,
         .accuracy = 100,
         .pp = 5,
         .secondaryEffectChance = 0,
@@ -3722,7 +3722,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_IMPRISON,
         .power = 0,
-        .type = TYPE_PSYCHIC,
+        .type = TYPE_WARCRIME,
         .accuracy = 100,
         .pp = 10,
         .secondaryEffectChance = 0,
@@ -3748,7 +3748,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_GRUDGE,
         .power = 0,
-        .type = TYPE_GHOST,
+        .type = TYPE_GAMER,
         .accuracy = 100,
         .pp = 5,
         .secondaryEffectChance = 0,
@@ -3839,7 +3839,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_SPECIAL_DEFENSE_DOWN_HIT,
         .power = 70,
-        .type = TYPE_PSYCHIC,
+        .type = TYPE_WARCRIME,
         .accuracy = 100,
         .pp = 5,
         .secondaryEffectChance = 50,
@@ -3995,7 +3995,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_RECHARGE,
         .power = 150,
-        .type = TYPE_FIRE,
+        .type = TYPE_WARCRIME,
         .accuracy = 90,
         .pp = 5,
         .secondaryEffectChance = 0,
@@ -4060,7 +4060,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_HEAL_BELL,
         .power = 0,
-        .type = TYPE_GRASS,
+        .type = TYPE_RELIGION,
         .accuracy = 0,
         .pp = 5,
         .secondaryEffectChance = 0,
@@ -4112,7 +4112,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_FORESIGHT,
         .power = 0,
-        .type = TYPE_NORMAL,
+        .type = TYPE_GAMER,
         .accuracy = 100,
         .pp = 40,
         .secondaryEffectChance = 0,
@@ -4177,7 +4177,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_TICKLE,
         .power = 0,
-        .type = TYPE_NORMAL,
+        .type = TYPE_SUS,
         .accuracy = 100,
         .pp = 20,
         .secondaryEffectChance = 0,
@@ -4242,7 +4242,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_FLINCH_MINIMIZE_HIT,
         .power = 80,
-        .type = TYPE_PSYCHIC,
+        .type = TYPE_AUTISM,
         .accuracy = 100,
         .pp = 30,
         .secondaryEffectChance = 10,
@@ -4359,7 +4359,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_MEAN_LOOK,
         .power = 0,
-        .type = TYPE_NORMAL,
+        .type = TYPE_GAMER,
         .accuracy = 100,
         .pp = 5,
         .secondaryEffectChance = 0,
@@ -4372,7 +4372,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_ATTACK_UP,
         .power = 0,
-        .type = TYPE_NORMAL,
+        .type = TYPE_AUTISM,
         .accuracy = 0,
         .pp = 40,
         .secondaryEffectChance = 0,
@@ -4437,7 +4437,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_SPEED_DOWN_HIT,
         .power = 55,
-        .type = TYPE_GROUND,
+        .type = TYPE_SUS,
         .accuracy = 95,
         .pp = 15,
         .secondaryEffectChance = 100,
@@ -4463,7 +4463,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_THIEF,
         .power = 40,
-        .type = TYPE_NORMAL,
+        .type = TYPE_WARCRIME,
         .accuracy = 100,
         .pp = 40,
         .secondaryEffectChance = 100,
@@ -4515,7 +4515,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_CALM_MIND,
         .power = 0,
-        .type = TYPE_PSYCHIC,
+        .type = TYPE_RELIGION,
         .accuracy = 0,
         .pp = 20,
         .secondaryEffectChance = 0,
@@ -4593,7 +4593,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_FUTURE_SIGHT,
         .power = 120,
-        .type = TYPE_STEEL,
+        .type = TYPE_WARCRIME,
         .accuracy = 85,
         .pp = 5,
         .secondaryEffectChance = 0,
@@ -4625,5 +4625,234 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .target = MOVE_TARGET_FOES_AND_ALLY,
         .priority = 0,
         .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
+    },
+    [MOVE_GOATSEE] =
+    {
+        .effect = EFFECT_CONFUSE_HIT,
+        .power = 75,
+        .type = TYPE_SUS,
+        .accuracy = 100,
+        .pp = 15,
+        .secondaryEffectChance = 75,
+        .target = MOVE_TARGET_FOES_AND_ALLY,
+        .priority = 0,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
+    },
+    // TODO: EFFECT
+    [MOVE_GOONING] =
+    {
+        .effect = EFFECT_CONFUSE_HIT,
+        .power = 0,
+        .type = TYPE_SUS,
+        .accuracy = 100,
+        .pp = 5,
+        .secondaryEffectChance = 50,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_MIRROR_MOVE_AFFECTED,
+    },
+    [MOVE_WHIP] =
+    {
+        .effect = EFFECT_HIT,
+        .power = 40,
+        .type = TYPE_SUS,
+        .accuracy = 100,
+        .pp = 40,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
+    },
+    [MOVE_ROOFIE] =
+    {
+        .effect = EFFECT_SLEEP,
+        .power = 0,
+        .type = TYPE_SUS,
+        .accuracy = 80,
+        .pp = 10,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
+    },
+    [MOVE_GLAZING] =
+    {
+        .effect = EFFECT_PARALYZE,
+        .power = 0,
+        .type = TYPE_SUS,
+        .accuracy = 100,
+        .pp = 20,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
+    },
+    [MOVE_SNM] =
+    {
+        .effect = EFFECT_PARALYZE,
+        .power = 0,
+        .type = TYPE_SUS,
+        .accuracy = 100,
+        .pp = 20,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_MIRROR_MOVE_AFFECTED | FLAG_SNATCH_AFFECTED,
+    },
+    [MOVE_MYSTERY_GOO] =
+    {
+        .effect = EFFECT_PARALYZE,
+        .power = 0,
+        .type = TYPE_SUS,
+        .accuracy = 100,
+        .pp = 20,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = 0,
+    },
+    [MOVE_RED_ROOM] =
+    {
+        .effect = EFFECT_PARALYZE,
+        .power = 0,
+        .type = TYPE_SUS,
+        .accuracy = 100,
+        .pp = 20,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = 0,
+    },
+    [MOVE_EJECT] =
+    {
+        .effect = EFFECT_PARALYZE,
+        .power = 40,
+        .type = TYPE_SUS,
+        .accuracy = 95,
+        .pp = 20,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
+    },
+    [MOVE_SABOTAGE] =
+    {
+        .effect = EFFECT_PARALYZE,
+        .power = 40,
+        .type = TYPE_SUS,
+        .accuracy = 95,
+        .pp = 5,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED,
+    },
+    [MOVE_GASLIGHT] =
+    {
+        .effect = EFFECT_CONFUSE,
+        .power = 0,
+        .type = TYPE_SUS,
+        .accuracy = 100,
+        .pp = 20,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
+    },
+    [MOVE_CBT] =
+    {
+        .effect = EFFECT_SPECIAL_DEFENSE_DOWN_HIT,
+        .power = 80,
+        .type = TYPE_SUS,
+        .accuracy = 100,
+        .pp = 10,
+        .secondaryEffectChance = 100,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
+    },
+    [MOVE_MEDTM] =
+    {
+        .effect = EFFECT_RESTORE_HP,
+        .power = 0,
+        .type = TYPE_GAMER,
+        .accuracy = 100,
+        .pp = 5,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_SNATCH_AFFECTED,
+    },
+    [MOVE_CNTRLR_SPIKE] =
+    {
+        .effect = EFFECT_HIT,
+        .power = 40,
+        .type = TYPE_GAMER,
+        .accuracy = 100,
+        .pp = 40,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
+    },
+    [MOVE_MALDING] =
+    {
+        .effect = EFFECT_HIT,
+        .power = 40,
+        .type = TYPE_GAMER,
+        .accuracy = 100,
+        .pp = 10,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = 0,
+    },
+    [MOVE_MALDING] =
+    {
+        .effect = EFFECT_HIT,
+        .power = 40,
+        .type = TYPE_GAMER,
+        .accuracy = 100,
+        .pp = 10,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = 0,
+    },
+    [MOVE_DESTROY] =
+    {
+        .effect = EFFECT_KNOCK_OFF,
+        .power = 60,
+        .type = TYPE_GAMER,
+        .accuracy = 100,
+        .pp = 15,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
+    },
+    [MOVE_MAIDENLESS] =
+    {
+        .effect = EFFECT_CONFUSE_HIT,
+        .power = 90,
+        .type = TYPE_GAMER,
+        .accuracy = 100,
+        .pp = 15,
+        .secondaryEffectChance = 10,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
+    },
+    [MOVE_360_NOSCOPE] =
+    {
+        .effect = EFFECT_HIT,
+        .power = 150,
+        .type = TYPE_GAMER,
+        .accuracy = 50,
+        .pp = 5,
+        .secondaryEffectChance = 10,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
     },
 };
