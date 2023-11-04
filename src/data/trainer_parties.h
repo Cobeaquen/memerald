@@ -3366,49 +3366,70 @@ static const struct TrainerMonItemCustomMoves sParty_Drake[] = {
 
 static const struct TrainerMonItemCustomMoves sParty_Roxanne1[] = {
     {
-    .iv = 100,
-    .lvl = 12,
-    .species = SPECIES_GEODUDE,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_TACKLE, MOVE_DEFENSE_CURL, MOVE_ROCK_THROW, MOVE_ROCK_TOMB}
+    .iv = 250,
+    .lvl = 13,
+    .species = SPECIES_LOTAD,
+    .heldItem = ITEM_MYSTIC_WATER,
+    .moves = {MOVE_WATER_GUN, MOVE_ABSORB, MOVE_RAIN_DAMCE, MOVE_ROCK_THROW}
     },
     {
-    .iv = 100,
+    .iv = 250,
     .lvl = 12,
-    .species = SPECIES_GEODUDE,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_TACKLE, MOVE_DEFENSE_CURL, MOVE_ROCK_THROW, MOVE_ROCK_TOMB}
+    .species = SPECIES_POLIWAG,
+    .heldItem = ITEM_FOCUS_BAND,
+    .moves = {MOVE_DEFENSE_CURL, MOVE_ROLLOUT}
     },
     {
-    .iv = 200,
-    .lvl = 15,
-    .species = SPECIES_NOSEPASS,
-    .heldItem = ITEM_ORAN_BERRY,
-    .moves = {MOVE_BLOCK, MOVE_HARDEN, MOVE_TACKLE, MOVE_ROCK_TOMB}
+    .iv = 250,
+    .lvl = 13,
+    .species = SPECIES_POLIWHIRL,
+    .heldItem = ITEM_ORAN_QUICK_CLAW,
+    .moves = {MOVE_WATER_GUN, MOVE_RAIN_DANCE, MOVE_HYPNOSIS, MOVE_BRICK_BREAK}
+    },
+    {
+    .iv = 250,
+    .lvl = 14,
+    .species = SPECIES_LOMBRE,
+    .heldItem = ITEM_ORAN_MYSTIC_WATER,
+    .moves = {MOVE_WATER_GUN, MOVE_RAIN_DANCE, MOVE_MEGA_DRAIN, MOVE_EARTH_POWER}
+    },
+    {
+    .iv = 250,
+    .lvl = 16,
+    .species = SPECIES_POLITOED,
+    .heldItem = ITEM_ORAN_LEFTOVERS,
+    .moves = {MOVE_WATER_PULSE, MOVE_ICY_WIND, MOVE_GIGA_DRAIN, MOVE_EARTH_POWER}
     }
 };
 
 static const struct TrainerMonItemCustomMoves sParty_Brawly1[] = {
     {
-    .iv = 100,
-    .lvl = 16,
-    .species = SPECIES_MACHOP,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_KARATE_CHOP, MOVE_LOW_KICK, MOVE_SEISMIC_TOSS, MOVE_BULK_UP}
+    .iv = 250,
+    .lvl = 18,
+    .species = SPECIES_MACHOKE,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_BRICK_BREAK, MOVE_THUNDER_PUNCH, MOVE_KNOCK_OFF, MOVE_DRAGON_DANCE}
     },
     {
-    .iv = 100,
-    .lvl = 16,
-    .species = SPECIES_MEDITITE,
+    .iv = 250,
+    .lvl = 17,
+    .species = SPECIES_NOSEPASS,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_FOCUS_PUNCH, MOVE_LIGHT_SCREEN, MOVE_REFLECT, MOVE_BULK_UP}
+    .moves = {MOVE_ROCK_THROW, MOVE_EARTH_POWER, MOVE_IRON_DEFENSE, MOVE_ROCK_POLISH}
     },
     {
-    .iv = 200,
-    .lvl = 19,
-    .species = SPECIES_MAKUHITA,
-    .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_ARM_THRUST, MOVE_VITAL_THROW, MOVE_REVERSAL, MOVE_BULK_UP}
+    .iv = 250,
+    .lvl = 18,
+    .species = SPECIES_GLOOM,
+    .heldItem = ITEM_SITRUS_LEFTOVERS,
+    .moves = {MOVE_TOXIC, MOVE_LEECH_SEED, MOVE_PROTECT, MOVE_SUBSTITUTE}
+    },
+     {
+    .iv = 250,
+    .lvl = 15,
+    .species = SPECIES_SLOW_BRO,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_SURF, MOVE_PSYCHIC, MOVE_SLAKK_OFF, MOVE_EARTH_POWER}
     }
 };
 

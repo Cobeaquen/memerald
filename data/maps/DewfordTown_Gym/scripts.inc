@@ -380,24 +380,21 @@ DewfordTown_Gym_Text_CristianPostBattle:
 	.string "Go after that BADGE!$"
 
 DewfordTown_Gym_Text_BrawlyIntro:
-	.string "I'm BRAWLY!\n"
-	.string "DEWFORD's GYM LEADER!\p"
-	.string "I've been churned in the rough waves\n"
-	.string "of these parts, and I've grown tough\l"
-	.string "in the pitch-black cave!\p"
-	.string "So you wanted to challenge me?\n"
-	.string "Let me see what you're made of!$"
-
+	.string "Whoopooooooooooooo yeah baby"\n
+	.string "This is what I've been waiting for\p"
+	.string "Are you ready to taste my nutsack son,\n"
+	.string "Cause im gona whoop your ass!$"
+	
 DewfordTown_Gym_Text_BrawlyDefeat:
-	.string "Whoah, wow! You made a much bigger\n"
-	.string "splash than I expected!\p"
-	.string "You swamped me!\p"
-	.string "Okay, you've got me.\n"
-	.string "Take this GYM BADGE!$"
+	.string "What a battle, I must say\n"
+	.string "That realy got my asshole tingeling!\p"
+	.string "Just like when i got my first sex toy\p"
+	.string "Or when i pulled a mint psa 9\l"
+	.string "Dark Magician girl.$"
 
 DewfordTown_Gym_Text_ReceivedKnuckleBadge:
 	.string "{PLAYER} received the KNUCKLE BADGE\n"
-	.string "from BRAWLY.$"
+	.string "from Big Moist man Charlie.$"
 
 DewfordTown_Gym_Text_KnuckleBadgeInfoTakeThis:
 	.string "The KNUCKLE BADGE makes all POKéMON\n"
@@ -415,13 +412,11 @@ DewfordTown_Gym_Text_ExplainBulkUp:
 	.string "… … … … … …$"
 
 DewfordTown_Gym_Text_RegisteredBrawly:
-	.string "Registered GYM LEADER BRAWLY\n"
+	.string "Registered Moist Critical\n"
 	.string "in the POKéNAV.$"
 
 DewfordTown_Gym_Text_BrawlyPostBattle:
-	.string "I can see your talent becoming a giant\n"
-	.string "wave to cause a storm of astonishment\l"
-	.string "among TRAINERS one day!$"
+	.string "Anyway that pink sauce lady is crazy$"
 
 DewfordTown_Gym_Text_GymStatue:
 	.string "DEWFORD TOWN POKéMON GYM$"
