@@ -4224,7 +4224,6 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Shelby5[] = {
     }
 };
 
-/*
 static const struct TrainerMonNoItemDefaultMoves sParty_Calvin1[] = {
     {
     .iv = 0,
@@ -4232,8 +4231,8 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Calvin1[] = {
     .species = SPECIES_POOCHYENA,
     }
 };
-*/
 
+/*
 static const struct TrainerMonNoItemCustomMoves sParty_Calvin1[] = {
     {
     .iv = 0,
@@ -4242,6 +4241,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_Calvin1[] = {
     .moves = {MOVE_BATON_PASS, MOVE_NONE, MOVE_NONE, MOVE_NONE}
     }
 };
+*/
 
 static const struct TrainerMonNoItemDefaultMoves sParty_Billy[] = {
     {
