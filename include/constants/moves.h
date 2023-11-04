@@ -373,6 +373,7 @@
 #define MOVE_CBT 367
 
 // Gamer
+// Uno reverse
 #define MOVE_MEDTM 368
 #define MOVE_CNTRLR_SPIKE 369
 #define MOVE_MALDING 370
@@ -381,10 +382,10 @@
 #define MOVE_360_NOSCOPE 373
 #define MOVE_FLAME 374
 #define MOVE_RACISM 375
-#define MOVE_COOKIELOL 376 // too long
+#define MOVE_COOKIELOL 376
 #define MOVE_APE_MODE 377
 #define MOVE_THE_VOICES 378
-#define MOVE_PRO_GAMER_MOVE 379
+#define MOVE_PROGAMERMOVE 379
 
 // Religion
 #define MOVE_PRAYER 380
@@ -392,13 +393,13 @@
 #define MOVE_CRUSADE 382
 #define MOVE_FLOODING 383
 #define MOVE_BELIEF 384
-#define MOVE_CONVERSION 385
-#define MOVE_SHIELD_OF_FAITH 386
+#define MOVE_CONVERT 385
+#define MOVE_SOF 386
 #define MOVE_LULLABY 387
 #define MOVE_CRUCIFIXION 388
 #define MOVE_RESURRECT 389
 #define MOVE_DISPEL_CURSE 390
-#define MOVE_SWARM_OF_LOCUSTS 391
+#define MOVE_SWARM_O_BUGS 391
 
 // Warcrime
 #define MOVE_BOMBING 392
@@ -412,7 +413,7 @@
 #define MOVE_GUN 400
 #define MOVE_EXECUTION 401
 #define MOVE_9_11 402
-#define MOVE_ASSASINATION 403 // Wrongfully spellt on purpose lmao
+#define MOVE_ASSASSINATE 403
 #define MOVE_DRONE_STRIKE 404
 
 // Autism
@@ -425,11 +426,15 @@
 #define MOVE_STATIC 411
 #define MOVE_ANXIETY 412
 #define MOVE_THE_SPECTRUM 413
-#define MOVE_HYPER_FIXATE 414
+#define MOVE_ANTI_SOCIAL 414
+#define MOVE_HYPER_FIXATE 415
 
-#define MOVE_ROCKETLEAGUE 415
+#define MOVE_ROCKETLEAGUE 416
 
-#define MOVES_COUNT 416
+#define MOVE_UNO_REVERSE 417 // Gamer
+#define MOVE_STUTTER 418
+
+#define MOVES_COUNT 419
 
 // Used for checks for moves affected by Disable, Mimic, etc.
 #define MOVE_UNAVAILABLE 0xFFFF

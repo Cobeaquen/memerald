@@ -1253,6 +1253,21 @@
 	.byte \position
 	.endm
 
+	.macro jumponchance var:req ptr:req
+	.byte 0xf9
+	.byte \var
+	.4byte \ptr
+	.endm
+
+	.macro swapuseratkdefstats
+	.byte 0xfa
+	.endm
+
+	.macro trysetmysterygoo ptr:req
+	.byte 0xfb
+	.4byte \ptr
+	.endm
+
 @ various command changed to more readable macros
 	.macro cancelmultiturnmoves battler:req
 	various \battler, VARIOUS_CANCEL_MULTI_TURN_MOVES

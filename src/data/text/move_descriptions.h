@@ -1421,6 +1421,14 @@ static const u8 sSugmaDescription[] = _(
     "The user forces all targets\n"
     "to lick their disgusting balls");
 
+static const u8 sGooningDescription[] = _(
+    "50/50 to sharply increase all\n"
+    "stats or to reduce all stats by 1");
+
+static const u8 sMysteryGooDescription[] = _(
+    "Pours mysteroius goo that\n"
+    "slows the foe switching in.");
+
 // MOVE_NONE is ignored in this table. Make sure to always subtract 1 before getting the right pointer.
 const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
 {
@@ -1779,4 +1787,6 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_DOOM_DESIRE - 1] = sDoomDesireDescription,
     [MOVE_PSYCHO_BOOST - 1] = sPsychoBoostDescription,
     [MOVE_SUGMA - 1] = sSugmaDescription,
+    [MOVE_GOONING - 1] = sGooningDescription,
+    [MOVE_MYSTERY_GOO - 1] = sMysteryGooDescription,
 };

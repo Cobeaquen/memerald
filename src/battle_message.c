@@ -431,6 +431,10 @@ static const u8 sText_SpDef2[] = _("SP. DEF");
 static const u8 sText_Accuracy[] = _("accuracy");
 static const u8 sText_Evasiveness[] = _("evasiveness");
 
+// Custom
+static const u8 sText_PkmnAffectedByMysteryGoo[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX} is slowed down\nby MYSTERY GOO!");
+
+
 const u8 * const gStatNamesTable[NUM_BATTLE_STATS] =
 {
     [STAT_HP]      = sText_HP2,
@@ -885,6 +889,7 @@ const u8 * const gBattleStringsTable[BATTLESTRINGS_COUNT - BATTLESTRINGS_TABLE_S
     [STRINGID_PKMNBOXLANETTESPCFULL - BATTLESTRINGS_TABLE_START] = gText_PkmnTransferredLanettesPCBoxFull,
     [STRINGID_TRAINER1WINTEXT - BATTLESTRINGS_TABLE_START] = sText_Trainer1WinText,
     [STRINGID_TRAINER2WINTEXT - BATTLESTRINGS_TABLE_START] = sText_Trainer2WinText,
+    [STRINGID_PKMNAFFECTEDBYMYSTERYGOO - BATTLESTRINGS_TABLE_START] = sText_PkmnAffectedByMysteryGoo,
 };
 
 const u16 gMissStringIds[] =

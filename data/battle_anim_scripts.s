@@ -372,7 +372,15 @@ gBattleAnims_Moves::
 	.4byte Move_DOOM_DESIRE
 	.4byte Move_PSYCHO_BOOST
 	.4byte Move_SUGMA
-	.4byte Move_COUNT @ cannot be reached, because last move is Psycho Boost (Akshually it's Sugma)
+	.4byte MOVE_GOATSEE
+	.4byte Move_BULK_UP @ Gooning
+	.4byte Move_BULK_UP @ Whip
+	.4byte Move_BULK_UP @ Roofie
+	.4byte Move_BULK_UP @ Glazing
+	.4byte Move_SKILL_SWAP @ SnM
+	.4byte Move_MUD_SHOT @ Mystery Goo
+
+	.4byte Move_COUNT @ cannot be reached, because last move is Psycho Boost (Akshually it's not)
 
 	.align 2
 gBattleAnims_StatusConditions::

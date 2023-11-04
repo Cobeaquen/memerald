@@ -380,16 +380,16 @@ DewfordTown_Gym_Text_CristianPostBattle:
 	.string "Go after that BADGE!$"
 
 DewfordTown_Gym_Text_BrawlyIntro:
-	.string "Whoopooooooooooooo yeah baby"\n
+	.string "Whoopooooooooooooo yeah baby\n"
 	.string "This is what I've been waiting for\p"
 	.string "Are you ready to taste my nutsack son,\n"
 	.string "Cause im gona whoop your ass!$"
 	
 DewfordTown_Gym_Text_BrawlyDefeat:
 	.string "What a battle, I must say\n"
-	.string "That realy got my asshole tingeling!\p"
-	.string "Just like when i got my first sex toy\p"
-	.string "Or when i pulled a mint psa 9\l"
+	.string "That really got my asshole tingeling!\p"
+	.string "Just like when I got my first sex toy\p"
+	.string "Or when I pulled a mint psa 9\l"
 	.string "Dark Magician girl.$"
 
 DewfordTown_Gym_Text_ReceivedKnuckleBadge:

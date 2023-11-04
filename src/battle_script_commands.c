@@ -325,6 +325,9 @@ static void Cmd_removeattackerstatus1(void);
 static void Cmd_finishaction(void);
 static void Cmd_finishturn(void);
 static void Cmd_trainerslideout(void);
+static void Cmd_jumponchance(void);
+static void Cmd_swapuseratkdefstats(void);
+static void Cmd_trysetmysterygoo(void);
 
 void (* const gBattleScriptingCommandsTable[])(void) =
 {
@@ -576,7 +579,10 @@ void (* const gBattleScriptingCommandsTable[])(void) =
     Cmd_removeattackerstatus1,                   //0xF5
     Cmd_finishaction,                            //0xF6
     Cmd_finishturn,                              //0xF7
-    Cmd_trainerslideout                          //0xF8
+    Cmd_trainerslideout,                         //0xF8
+    Cmd_jumponchance,                            //0xF9
+    Cmd_swapuseratkdefstats,                     //0xFA
+    Cmd_trysetmysterygoo,                        //0xFB
 };
 
 struct StatFractions
@@ -665,6 +671,8 @@ static const u8 *const sMoveEffectBS_Ptrs[] =
     [MOVE_EFFECT_REMOVE_PARALYSIS] = BattleScript_MoveEffectSleep,
     [MOVE_EFFECT_ATK_DEF_DOWN]     = BattleScript_MoveEffectSleep,
     [MOVE_EFFECT_RECOIL_33]        = BattleScript_MoveEffectRecoil,
+    [MOVE_EFFECT_ALL_STATS_UP2]    = BattleScript_MoveEffectSleep,
+    [MOVE_EFFECT_ALL_STATS_DOWN]   = BattleScript_MoveEffectSleep,
 };
 
 static const struct WindowTemplate sUnusedWinTemplate =
@@ -2787,6 +2795,14 @@ void SetMoveEffect(bool8 primary, u8 certain)
             case MOVE_EFFECT_ALL_STATS_UP:
                 BattleScriptPush(gBattlescriptCurrInstr + 1);
                 gBattlescriptCurrInstr = BattleScript_AllStatsUp;
+                break;
+            case MOVE_EFFECT_ALL_STATS_UP2:
+                BattleScriptPush(gBattlescriptCurrInstr + 1);
+                gBattlescriptCurrInstr = BattleScript_AllStatsUp2;
+                break;
+            case MOVE_EFFECT_ALL_STATS_DOWN:
+                BattleScriptPush(gBattlescriptCurrInstr + 1);
+                gBattlescriptCurrInstr = BattleScript_AllStatsDown;
                 break;
             case MOVE_EFFECT_RAPIDSPIN:
                 BattleScriptPush(gBattlescriptCurrInstr + 1);
@@ -5196,32 +5212,48 @@ static void Cmd_switchineffects(void)
     gHitMarker &= ~HITMARKER_FAINTED(gActiveBattler);
     gSpecialStatuses[gActiveBattler].faintedHasReplacement = FALSE;
 
-    if (!(gSideStatuses[GetBattlerSide(gActiveBattler)] & SIDE_STATUS_SPIKES_DAMAGED)
-        && (gSideStatuses[GetBattlerSide(gActiveBattler)] & SIDE_STATUS_SPIKES)
-        && !IS_BATTLER_OF_TYPE(gActiveBattler, TYPE_FLYING)
-        && gBattleMons[gActiveBattler].ability != ABILITY_LEVITATE)
+    //bool8 setSpikesCond = FALSE; // !(gSideStatuses[GetBattlerSide(gActiveBattler)] & SIDE_STATUS_SPIKES_DAMAGED)&& (gSideStatuses[GetBattlerSide(gActiveBattler)] & SIDE_STATUS_SPIKES) && !IS_BATTLER_OF_TYPE(gActiveBattler, TYPE_FLYING) && gBattleMons[gActiveBattler].ability != ABILITY_LEVITATE;
+    
+    //bool8 setMysterygooCond = gSideStatuses[GetBattlerSide(gActiveBattler)] & SIDE_STATUS_MYSTERY_GOO;
+
+    if ((!(gSideStatuses[GetBattlerSide(gActiveBattler)] & SIDE_STATUS_SPIKES_DAMAGED) && (gSideStatuses[GetBattlerSide(gActiveBattler)] & SIDE_STATUS_SPIKES) && !IS_BATTLER_OF_TYPE(gActiveBattler, TYPE_FLYING) && gBattleMons[gActiveBattler].ability != ABILITY_LEVITATE)
+        || gSideStatuses[GetBattlerSide(gActiveBattler)] & SIDE_STATUS_MYSTERY_GOO)
     {
-        u8 spikesDmg;
+        if (!(gSideStatuses[GetBattlerSide(gActiveBattler)] & SIDE_STATUS_SPIKES_DAMAGED) && (gSideStatuses[GetBattlerSide(gActiveBattler)] & SIDE_STATUS_SPIKES) && !IS_BATTLER_OF_TYPE(gActiveBattler, TYPE_FLYING) && gBattleMons[gActiveBattler].ability != ABILITY_LEVITATE)
+        {
+            u8 spikesDmg;
 
-        gSideStatuses[GetBattlerSide(gActiveBattler)] |= SIDE_STATUS_SPIKES_DAMAGED;
+            gSideStatuses[GetBattlerSide(gActiveBattler)] |= SIDE_STATUS_SPIKES_DAMAGED;
 
-        gBattleMons[gActiveBattler].status2 &= ~STATUS2_DESTINY_BOND;
-        gHitMarker &= ~HITMARKER_DESTINYBOND;
+            gBattleMons[gActiveBattler].status2 &= ~STATUS2_DESTINY_BOND;
+            gHitMarker &= ~HITMARKER_DESTINYBOND;
 
-        spikesDmg = (5 - gSideTimers[GetBattlerSide(gActiveBattler)].spikesAmount) * 2;
-        gBattleMoveDamage = gBattleMons[gActiveBattler].maxHP / (spikesDmg);
-        if (gBattleMoveDamage == 0)
-            gBattleMoveDamage = 1;
+            spikesDmg = (5 - gSideTimers[GetBattlerSide(gActiveBattler)].spikesAmount) * 2;
+            gBattleMoveDamage = gBattleMons[gActiveBattler].maxHP / (spikesDmg);
+            if (gBattleMoveDamage == 0)
+                gBattleMoveDamage = 1;
 
-        gBattleScripting.battler = gActiveBattler;
-        BattleScriptPushCursor();
+            gBattleScripting.battler = gActiveBattler;
+            BattleScriptPushCursor();
 
-        if (gBattlescriptCurrInstr[1] == BS_TARGET)
-            gBattlescriptCurrInstr = BattleScript_SpikesOnTarget;
-        else if (gBattlescriptCurrInstr[1] == BS_ATTACKER)
-            gBattlescriptCurrInstr = BattleScript_SpikesOnAttacker;
-        else
-            gBattlescriptCurrInstr = BattleScript_SpikesOnFaintedBattler;
+            if (gBattlescriptCurrInstr[1] == BS_TARGET)
+                gBattlescriptCurrInstr = BattleScript_SpikesOnTarget;
+            else if (gBattlescriptCurrInstr[1] == BS_ATTACKER)
+                gBattlescriptCurrInstr = BattleScript_SpikesOnAttacker;
+            else
+                gBattlescriptCurrInstr = BattleScript_SpikesOnFaintedBattler;
+        }
+        if (gSideStatuses[GetBattlerSide(gActiveBattler)] & SIDE_STATUS_MYSTERY_GOO)
+        {
+            gBattleScripting.battler = gActiveBattler;
+            //BattleScriptPushCursor();
+            if (gBattlescriptCurrInstr[1] == BS_TARGET)
+                gBattlescriptCurrInstr = BattleScript_MysteryGooOnTarget;
+            else // if (gBattlescriptCurrInstr[1] == BS_ATTACKER)
+                gBattlescriptCurrInstr = BattleScript_MysteryGooOnAttacker;
+
+            //gSideStatuses[GetBattlerSide(gActiveBattler)] |= SIDE_STATUS_SPIKES_DAMAGED;
+        }
     }
     else
     {
@@ -8423,6 +8455,21 @@ static void Cmd_trysetspikes(void)
     }
 }
 
+static void Cmd_trysetmysterygoo(void)
+{
+    u8 targetSide = BATTLE_OPPOSITE(GetBattlerSide(gBattlerAttacker));
+
+    if (gSideStatuses[targetSide] & SIDE_STATUS_MYSTERY_GOO)
+    {
+        //gSideStatuses[targetSide] &= ~SIDE_STATUS_MYSTERY_GOO
+        gBattlescriptCurrInstr = T1_READ_PTR(gBattlescriptCurrInstr + 1);
+        return;
+    }
+    gSideStatuses[targetSide] |= SIDE_STATUS_MYSTERY_GOO;
+
+    gBattlescriptCurrInstr += 5;
+}
+
 static void Cmd_setforesight(void)
 {
     gBattleMons[gBattlerTarget].status2 |= STATUS2_FORESIGHT;
@@ -8729,6 +8776,15 @@ static void Cmd_copyfoestats(void)
     }
 
     gBattlescriptCurrInstr += 5; // Has an unused jump ptr(possibly for a failed attempt) parameter.
+}
+
+static void Cmd_swapuseratkdefstats(void)
+{
+    s8 temp = gBattleMons[gBattlerAttacker].statStages[STAT_DEF];
+    gBattleMons[gBattlerAttacker].statStages[STAT_DEF] = gBattleMons[gBattlerAttacker].statStages[STAT_ATK];
+    gBattleMons[gBattlerAttacker].statStages[STAT_ATK] = temp;
+
+    gBattlescriptCurrInstr += 1;
 }
 
 static void Cmd_rapidspinfree(void)
@@ -10229,4 +10285,17 @@ static void Cmd_trainerslideout(void)
     MarkBattlerForControllerExec(gActiveBattler);
 
     gBattlescriptCurrInstr += 2;
+}
+
+static void Cmd_jumponchance(void)
+{
+    u8 chance = gBattlescriptCurrInstr[1];
+    const u8 *jumpPtr = T2_READ_PTR(gBattlescriptCurrInstr + 2);
+
+    if (chance > (Random() % 100)) {
+        gBattlescriptCurrInstr = jumpPtr;
+    }
+    else {
+        gBattlescriptCurrInstr += 6;
+    }
 }
