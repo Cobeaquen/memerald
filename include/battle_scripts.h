@@ -69,6 +69,8 @@ extern const u8 BattleScript_SpikesOnFaintedBattler[];
 extern const u8 BattleScript_PerishSongTakesLife[];
 extern const u8 BattleScript_PerishSongCountGoesDown[];
 extern const u8 BattleScript_AllStatsUp[];
+extern const u8 BattleScript_AllStatsUp2[];
+extern const u8 BattleScript_AllStatsDown[];
 extern const u8 BattleScript_RapidSpinAway[];
 extern const u8 BattleScript_WrapFree[];
 extern const u8 BattleScript_LeechSeedFree[];
@@ -222,5 +224,10 @@ extern const u8 BattleScript_RunByUsingItem[];
 extern const u8 BattleScript_ActionWatchesCarefully[];
 extern const u8 BattleScript_ActionGetNear[];
 extern const u8 BattleScript_ActionThrowPokeblock[];
+extern const u8 BattleScript_MysteryGooOnAttacker[];
+//extern const u8 BattleScript_MysteryGooOnAttackerFainted[];
+extern const u8 BattleScript_MysteryGooOnTarget[];
+//extern const u8 BattleScript_MysteryGooOnTargetFainted[];
+extern const u8 BattleScript_PrintAffectedByMysteryGoo[];
 
 #endif // GUARD_BATTLE_SCRIPTS_H
