@@ -3370,7 +3370,7 @@ static const struct TrainerMonItemCustomMoves sParty_Roxanne1[] = {
     .lvl = 13,
     .species = SPECIES_LOTAD,
     .heldItem = ITEM_MYSTIC_WATER,
-    .moves = {MOVE_WATER_GUN, MOVE_ABSORB, MOVE_RAIN_DAMCE, MOVE_ROCK_THROW}
+    .moves = {MOVE_WATER_GUN, MOVE_ABSORB, MOVE_RAIN_DANCE, MOVE_ROCK_THROW}
     },
     {
     .iv = 250,
@@ -3383,22 +3383,22 @@ static const struct TrainerMonItemCustomMoves sParty_Roxanne1[] = {
     .iv = 250,
     .lvl = 13,
     .species = SPECIES_POLIWHIRL,
-    .heldItem = ITEM_ORAN_QUICK_CLAW,
+    .heldItem = ITEM_QUICK_CLAW,
     .moves = {MOVE_WATER_GUN, MOVE_RAIN_DANCE, MOVE_HYPNOSIS, MOVE_BRICK_BREAK}
     },
     {
     .iv = 250,
     .lvl = 14,
     .species = SPECIES_LOMBRE,
-    .heldItem = ITEM_ORAN_MYSTIC_WATER,
-    .moves = {MOVE_WATER_GUN, MOVE_RAIN_DANCE, MOVE_MEGA_DRAIN, MOVE_EARTH_POWER}
+    .heldItem = ITEM_MYSTIC_WATER,
+    .moves = {MOVE_WATER_GUN, MOVE_RAIN_DANCE, MOVE_MEGA_DRAIN, MOVE_SAND_TOMB}
     },
     {
     .iv = 250,
     .lvl = 16,
     .species = SPECIES_POLITOED,
-    .heldItem = ITEM_ORAN_LEFTOVERS,
-    .moves = {MOVE_WATER_PULSE, MOVE_ICY_WIND, MOVE_GIGA_DRAIN, MOVE_EARTH_POWER}
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_WATER_PULSE, MOVE_ICY_WIND, MOVE_GIGA_DRAIN, MOVE_SAND_TOMB}
     }
 };
 
@@ -3415,21 +3415,21 @@ static const struct TrainerMonItemCustomMoves sParty_Brawly1[] = {
     .lvl = 17,
     .species = SPECIES_NOSEPASS,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_ROCK_THROW, MOVE_EARTH_POWER, MOVE_IRON_DEFENSE, MOVE_ROCK_POLISH}
+    .moves = {MOVE_ROCK_THROW, MOVE_SAND_TOMB, MOVE_IRON_DEFENSE, MOVE_ROCK_TOMB}
     },
     {
     .iv = 250,
     .lvl = 18,
     .species = SPECIES_GLOOM,
-    .heldItem = ITEM_SITRUS_LEFTOVERS,
+    .heldItem = ITEM_LEFTOVERS,
     .moves = {MOVE_TOXIC, MOVE_LEECH_SEED, MOVE_PROTECT, MOVE_SUBSTITUTE}
     },
      {
     .iv = 250,
     .lvl = 15,
-    .species = SPECIES_SLOW_BRO,
+    .species = SPECIES_SLOWBRO,
     .heldItem = ITEM_LEFTOVERS,
-    .moves = {MOVE_SURF, MOVE_PSYCHIC, MOVE_SLAKK_OFF, MOVE_EARTH_POWER}
+    .moves = {MOVE_SURF, MOVE_PSYCHIC, MOVE_SLACK_OFF, MOVE_SAND_TOMB}
     }
 };
 
