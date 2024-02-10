@@ -379,6 +379,62 @@ gBattleAnims_Moves::
 	.4byte Move_BULK_UP @ Glazing
 	.4byte Move_SKILL_SWAP @ SnM
 	.4byte Move_MUD_SHOT @ Mystery Goo
+	.4byte Move_SUNNY_DAY
+	.4byte Move_FOLLOW_ME
+	.4byte Move_REFLECT
+	.4byte Move_BELLY_DRUM
+	.4byte Move_VINE_WHIP
+	.4byte Move_BARRIER
+	.4byte Move_MILK_DRINK
+	.4byte Move_DOUBLE_EDGE
+	.4byte Move_DRAGON_DANCE
+	.4byte Move_EGG_BOMB
+	.4byte Move_ENDEAVOR
+	.4byte Move_LOCK_ON
+	.4byte Move_FIRE_SPIN
+	.4byte Move_GROWL
+	.4byte Move_BLOCK
+	.4byte Move_OUTRAGE
+	.4byte Move_CURSE
+	.4byte Move_BOUNCE
+	.4byte Move_SUNNY_DAY
+	.4byte Move_WRAP
+	.4byte Move_HORN_DRILL
+	.4byte Move_SURF
+	.4byte Move_HEAL_BELL
+	.4byte Move_HELPING_HAND
+	.4byte Move_PROTECT
+	.4byte Move_SING
+	.4byte Move_SACRED_FIRE
+	.4byte Move_ATTRACT
+	.4byte Move_NIGHT_SHADE
+	.4byte Move_MAGICAL_LEAF
+	.4byte Move_LUSTER_PURGE
+	.4byte Move_SCRATCH @ torture
+	.4byte Move_EARTHQUAKE
+	.4byte Move_OVERHEAT @ invade
+	.4byte Move_OVERHEAT @ invasion
+	.4byte Move_SANDSTORM
+	.4byte Move_IMPRISON
+	.4byte Move_PERISH_SONG
+	.4byte Move_SPLASH
+	.4byte Move_SLASH
+	.4byte Move_DOUBLE_SLAP
+	.4byte Move_GUILLOTINE
+	.4byte Move_FLY
+	.4byte Move_REFRESH
+	.4byte Move_PSYCHIC
+	.4byte Move_SHARPEN
+	.4byte Move_OUTRAGE
+	.4byte Move_DOUBLE_TEAM
+	.4byte Move_REST
+	.4byte Move_THUNDERBOLT
+	.4byte Move_SPITE
+	.4byte Move_SIGNAL_BEAM
+	.4byte Move_PSYCH_UP
+	.4byte Move_STOCKPILE
+	.4byte Move_LEER
+	.4byte Move_STRING_SHOT
 
 	.4byte Move_COUNT @ cannot be reached, because last move is Psycho Boost (Akshually it's not)
 

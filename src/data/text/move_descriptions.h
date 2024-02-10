@@ -1421,14 +1421,280 @@ static const u8 sSugmaDescription[] = _(
     "The user forces all targets\n"
     "to lick their disgusting balls");
 
+static const u8 sGoatseeDescription[] = _(
+    "The target looks away\n"
+    "in horror");
+
 static const u8 sGooningDescription[] = _(
-    "50/50 to sharply increase all\n"
-    "stats or to reduce all stats by 1");
+    "50/50 to sharply raise all stats\n"
+    "or to reduce by 1 stage");
+
+static const u8 sWhipDescription[] = _(
+    "Whip your opponent, dealing\n"
+    "damage");
+
+static const u8 sRoofieDescription[] = _(
+    "Put opponent to sleep");
+
+static const u8 sGlazingDescription[] = _(
+    "Cover your opponent in semen,\n"
+    "making them paralyzed");
+
+static const u8 sSnMDescription[] = _(
+    "Switch the users attack and\n"
+    "def stats");
 
 static const u8 sMysteryGooDescription[] = _(
     "Pours mysteroius goo that\n"
     "slows the foe switching in.");
 
+static const u8 sRedRoomDescription[] = _(
+    "Deals bonus dmg to all\n"
+    "sus and warcrime moves");
+
+static const u8 sEjectDescription[] = _(
+    "switches opposing pokemon\n"
+    "to random pokemon");
+
+static const u8 sSabotageDescription[] = _(
+    "reflect + light screen\n"
+    "lasts for 3 turns");
+
+static const u8 sGaslightDescription[] = _(
+    "Convince your opponent they\n"
+    "are the crazy one, not you.");
+
+static const u8 sCbtDescription[] = _(
+    "Your willy is experiencing\n"
+    "excrutiating agony.");
+
+static const u8 sUnoReverseDescription[] = _(
+    "changes all type interactions\n"
+    "for 5 turns.");
+
+static const u8 sMedTMDescription[] = _(
+    "Consume a can of MED Healing,\n"
+    "increasing the speed of the user.");
+
+static const u8 sCntrlrSpikeDescription[] = _(
+    "Throw a gamecube controller,\n"
+    "dealing damage to your target.");
+
+static const u8 sMaldingSpikeDescription[] = _(
+    "Become so mad that your offensive,\n"
+    "stats improve, but def is reduced.");
+
+static const u8 sDestroyDescription[] = _(
+    "Hitting a target destroys their\n"
+    "item and deals decent dmg.");
+
+static const u8 sMaidenlessDescription[] = _(
+    "Call your opponent maidenless\n"
+    "dealing 90 special dmg.");
+
+static const u8 s360noscopeDescription[] = _(
+    "MLG 360 NOSCOPE OMG WOOOOOOOW\n"
+    );
+
+static const u8 sFlameDescription[] = _(
+    "Use the keyboard to insult your opp-\n"
+    "onent, making it lose itself in rage");
+
+static const u8 sRacismDescription[] = _(
+    "Being yourself is always better."
+);
+
+static const u8 sCookielolDescription[] = _(
+    "Molest your enemy pokemon who is a\n"
+    "minor, and then get canceled on twitter");
+
+static const u8 sApemodeDescription[] = _(
+    "Ooh im an animal im a boosted animal\n"
+    "im a diamond stuck in bronze 5");
+
+static const u8 sTheVoicesDescription[] = _(
+    "Give in to them and see what\n"
+    "happens");
+
+static const u8 sProgamermoveDescription[] = _(
+    "Game so hard you become immune for\n"
+    "a turn, and then deal damage the next");
+
+static const u8 sPrayerDescription[] = _(
+    "Get on your knees and thank the lord."
+);
+
+static const u8 sMolestDescription[] = _(
+    "Get on your knees and 'thank the lord'."
+);
+
+static const u8 sCrusadeDescription[] = _(
+    "Strike down all those who disagree\n"
+    "with your faith, especially muslims."
+);
+
+static const u8 sFloodingDescription[] = _(
+    "God is not pleased with twitter 'X'\n"
+    "Femboys and gives up on humanity."
+);
+
+static const u8 sBeliefDescription[] = _(
+    "Channel your belief in christ, allah,\n"
+    "wallahi bror and heal."
+);
+
+static const u8 sConvertDescription[] = _(
+    "If attacked with physical move,\n"
+    "Convert opponent into a religion etc."
+);
+
+static const u8 sSofDescription[] = _(
+    "Channel your divine might into a shield\n"
+    "that block all attacks for a turn"
+);
+
+static const u8 sLullabyDescription[] = _(
+    "Put all pokemon on the field to\n"
+    "sleep including user."
+);
+
+static const u8 sCrucifixionDescription[] = _(
+    "Nail the opponent to a cross\n"
+    "and burn it down."
+);
+
+static const u8 sResurrectDescription[] = _(
+    "Sacrifice user to resurrect and fully\n"
+    "heal another pokemon on your team xxx."
+);
+
+static const u8 sDispelcurseDescription[] = _(
+    "Can't hit those pesky ghost types?\n"
+    "We've got the solution for you."
+);
+
+static const u8 sSwarmobugsDescription[] = _(
+    "Summon a swarm of insects that drains\n"
+    "opponent at the end of their turn."
+);
+
+static const u8 sBombingDescription[] = _(
+    "Bombs the shit out of your opponent"
+);
+
+static const u8 sTortureDescription[] = _(
+    "Make your opponent suffer excruciating\n"
+    "agony and sells out one of their friends."
+);
+
+static const u8 sObamaDescription[] = _(
+    "OBAMAite"
+);
+
+static const u8 sInvasionDescription[] = _(
+    "om man missar tar man recoil,\n"
+    "high jump."
+);
+
+static const u8 sShowertimeDescription[] = _(
+    "Shower like they did in the\n"
+    "early 1940s."
+);
+
+static const u8 sGulagDescription[] = _(
+    "Break the oppponents fighting spirit,\n"
+    "by sending them to the gulag."
+);
+
+static const u8 sManslaughterDescription[] = _(
+    "He doesn't miss."
+);
+
+static const u8 sGunDescription[] = _(
+    "Gun shoot dead"
+);
+
+static const u8 sExecutionDescription[] = _(
+    "Finish your opponents off."
+);
+
+static const u8 s911Description[] = _(
+    "Get revenge for what the US did in\n"
+    "Iraq, kill all the civilians ???"
+);
+
+static const u8 sAssassinateDescription[] = _(
+    "Deal high amounts of damage,\n"
+    "this move usually goes first."
+);
+
+static const u8 sDronestrikeDescription[] = _(
+    "Enter cockpit becoming immune\n"
+    "to damage, then strike."
+);
+
+static const u8 sPerfectionstDescription[] = _(
+    "Strive for perfection increasing\n"
+    "all stats of the user Refresh animation."
+);
+
+static const u8 sPatternsDescription[] = _(
+    "The user is locked into the same move\n"
+    "until it misses Psychic animations."
+);
+
+static const u8 sQuickmathsDescription[] = _(
+    "Shock targets with your calculations,\n"
+    "leaving them paralyzed."
+);
+
+static const u8 sFreakoutDescription[] = _(
+    "Erupt in an autistic explosion,\n"
+    "dealing damage to the target."
+);
+
+static const u8 sUnstableDescription[] = _(
+    "You had the wrong cereal for breakfast\n"
+    "and now you're having a panic attack."
+);
+
+static const u8 sShutdownDescription[] = _(
+    "Everything is to much shut of your\n"
+    "brain and regain full hp."
+);
+
+static const u8 sStaticDescription[] = _(
+    "Reduces your opponents speed to\n"
+    "the point where this move goes first."
+);
+
+static const u8 sAnxietyDescription[] = _(
+    "Fear tomorrow to the point you can't\n"
+    "sleep and start snapping at everything."
+);
+
+static const u8 sThespectrumDescription[] = _(
+    "Hit more times depending on how\n"
+    "autistic you are."
+);
+
+static const u8 sAntisocialDescription[] = _(
+    "Shy away from interaction and focus\n"
+    "on staying sane."
+);
+
+static const u8 sHyperfixateDescription[] = _(
+    "Make an emulator or something,\n"
+    "because that's a thing to do?"
+);
+
+static const u8 sStutterDescription[] = _(
+    "Having a little trouble talking?"
+);
+
+static const u8 sRocketleagueDescription[] = _(
+    "This is rocket league."
+);
 // MOVE_NONE is ignored in this table. Make sure to always subtract 1 before getting the right pointer.
 const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
 {
@@ -1787,6 +2053,58 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_DOOM_DESIRE - 1] = sDoomDesireDescription,
     [MOVE_PSYCHO_BOOST - 1] = sPsychoBoostDescription,
     [MOVE_SUGMA - 1] = sSugmaDescription,
+    [MOVE_GOATSEE - 1] = sGoatseeDescription,
     [MOVE_GOONING - 1] = sGooningDescription,
+    [MOVE_WHIP - 1] = sWhipDescription,
+    [MOVE_ROOFIE - 1] = sRoofieDescription,
+    [MOVE_GLAZING - 1] = sGlazingDescription,
+    [MOVE_SNM - 1] = sSnMDescription,
     [MOVE_MYSTERY_GOO - 1] = sMysteryGooDescription,
+    [MOVE_RED_ROOM - 1] = sRedRoomDescription,
+    [MOVE_EJECT - 1] = sEjectDescription,
+    [MOVE_SABOTAGE - 1] = sSabotageDescription,
+    [MOVE_CBT - 1] = sCbtDescription,
+    [MOVE_MEDTM - 1] = sMedTMDescription,
+    [MOVE_CNTRLR_SPIKE - 1] = sCntrlrSpikeDescription,
+    [MOVE_MALDING - 1] = sMaldingSpikeDescription,
+    [MOVE_DESTROY - 1] = sDestroyDescription,
+    [MOVE_MAIDENLESS - 1] = sMaidenlessDescription,
+    [MOVE_360_NOSCOPE - 1] = s360noscopeDescription,
+    [MOVE_FLAME - 1] = sFlameDescription,
+    [MOVE_RACISM - 1] = sRacismDescription,
+    [MOVE_COOKIELOL - 1] = sCookielolDescription,
+    [MOVE_APE_MODE - 1] = sApemodeDescription,
+    [MOVE_THE_VOICES - 1] = sTheVoicesDescription,
+    [MOVE_PROGAMERMOVE - 1] = sProgamermoveDescription,
+    [MOVE_PRAYER - 1] = sPrayerDescription,
+    [MOVE_MOLEST - 1] = sMolestDescription,
+    [MOVE_CRUSADE - 1] = sCrusadeDescription,
+    [MOVE_FLOODING - 1] = sFloodingDescription,
+    [MOVE_BELIEF - 1] = sBeliefDescription,
+    [MOVE_CONVERT - 1] = sConvertDescription,
+    [MOVE_SOF - 1] = sSofDescription,
+    [MOVE_LULLABY - 1] = sLullabyDescription,
+    [MOVE_CRUCIFIXION - 1] = sCrucifixionDescription,
+    [MOVE_RESURRECT - 1] = sResurrectDescription,
+    [MOVE_DISPEL_CURSE - 1] = sDispelcurseDescription,
+    [MOVE_SWARM_O_BUGS - 1] = sSwarmobugsDescription,
+    [MOVE_BOMBING - 1] = sBombingDescription,
+    [MOVE_TORTURE - 1] = sTortureDescription,
+    [MOVE_OBAMA - 1] = sObamaDescription,
+    [MOVE_INVASION - 1] = sInvasionDescription,
+    [MOVE_INVADE - 1] = sInvasionDescription,
+    [MOVE_SHOWER_TIME - 1] = sShowertimeDescription,
+    [MOVE_GULAG - 1] = sGulagDescription,
+    [MOVE_MANSLAUGHTER - 1] = sManslaughterDescription,
+    [MOVE_GUN - 1] = sGunDescription,
+    [MOVE_EXECUTION - 1] = sExecutionDescription,
+    [MOVE_9_11 - 1] = s911Description,
+    [MOVE_ASSASSINATE - 1] = sAssassinateDescription,
+    [MOVE_DRONE_STRIKE - 1] = sDronestrikeDescription,
+    [MOVE_PERFECTIONST - 1] = sPerfectionstDescription,
+    [MOVE_ANTI_SOCIAL - 1] = sAntisocialDescription,
+    [MOVE_HYPER_FIXATE - 1] = sHyperfixateDescription,
+    [MOVE_ROCKETLEAGUE - 1] = sRocketleagueDescription,
+    [MOVE_UNO_REVERSE - 1] = sUnoReverseDescription,
+    [MOVE_STUTTER - 1] = sStutterDescription,
 };
