@@ -3370,20 +3370,20 @@ static const struct TrainerMonItemCustomMoves sParty_Roxanne1[] = {
     .lvl = 13,
     .species = SPECIES_LOTAD,
     .heldItem = ITEM_MYSTIC_WATER,
-    .moves = {MOVE_WATER_GUN, MOVE_ABSORB, MOVE_RAIN_DANCE, MOVE_ROCK_THROW}
+    .moves = {MOVE_WATER_GUN, MOVE_ABSORB, MOVE_POISON_POWDER, MOVE_ROCK_THROW}
     },
     {
     .iv = 250,
     .lvl = 12,
     .species = SPECIES_POLIWAG,
-    .heldItem = ITEM_FOCUS_BAND,
-    .moves = {MOVE_DEFENSE_CURL, MOVE_ROLLOUT}
+    .heldItem = ITEM_BRIGHT_POWDER,
+    .moves = {MOVE_DEFENSE_CURL, MOVE_ROLLOUT, MOVE_POISON_POWDER}
     },
     {
     .iv = 250,
     .lvl = 13,
     .species = SPECIES_POLIWHIRL,
-    .heldItem = ITEM_QUICK_CLAW,
+    .heldItem = ITEM_SCOPE_LENS,
     .moves = {MOVE_WATER_GUN, MOVE_RAIN_DANCE, MOVE_HYPNOSIS, MOVE_BRICK_BREAK}
     },
     {
@@ -3391,14 +3391,14 @@ static const struct TrainerMonItemCustomMoves sParty_Roxanne1[] = {
     .lvl = 14,
     .species = SPECIES_LOMBRE,
     .heldItem = ITEM_MYSTIC_WATER,
-    .moves = {MOVE_WATER_GUN, MOVE_RAIN_DANCE, MOVE_MEGA_DRAIN, MOVE_SAND_TOMB}
+    .moves = {MOVE_WATER_GUN, MOVE_POISON_POWDER, MOVE_MEGA_DRAIN, MOVE_MAGNITUDE}
     },
     {
     .iv = 250,
     .lvl = 16,
     .species = SPECIES_POLITOED,
     .heldItem = ITEM_LEFTOVERS,
-    .moves = {MOVE_WATER_PULSE, MOVE_ICY_WIND, MOVE_GIGA_DRAIN, MOVE_SAND_TOMB}
+    .moves = {MOVE_WATER_PULSE, MOVE_ICY_WIND, MOVE_GIGA_DRAIN, MOVE_MAGNITUDE}
     }
 };
 
@@ -3414,22 +3414,29 @@ static const struct TrainerMonItemCustomMoves sParty_Brawly1[] = {
     .iv = 250,
     .lvl = 17,
     .species = SPECIES_NOSEPASS,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_ROCK_THROW, MOVE_SAND_TOMB, MOVE_IRON_DEFENSE, MOVE_ROCK_TOMB}
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_ROCK_THROW, MOVE_MUD_SHOT, MOVE_IRON_DEFENSE, MOVE_SANDSTORM}
     },
     {
     .iv = 250,
     .lvl = 18,
-    .species = SPECIES_GLOOM,
+    .species = SPECIES_MAGNETON,
     .heldItem = ITEM_LEFTOVERS,
-    .moves = {MOVE_TOXIC, MOVE_LEECH_SEED, MOVE_PROTECT, MOVE_SUBSTITUTE}
+    .moves = {MOVE_THUNDER_SHOCK, MOVE_SANDSTORM, MOVE_SWIFT, MOVE_PROTECT}
     },
      {
     .iv = 250,
-    .lvl = 15,
-    .species = SPECIES_SLOWBRO,
+    .lvl = 19,
+    .species = SPECIES_LAIRON,
     .heldItem = ITEM_LEFTOVERS,
-    .moves = {MOVE_SURF, MOVE_PSYCHIC, MOVE_SLACK_OFF, MOVE_SAND_TOMB}
+    .moves = {MOVE_METAL_CLAW, MOVE_MAGNITUDE, MOVE_ROCK_THROW, MOVE_CONFUSION}
+    },
+     {
+    .iv = 250,
+    .lvl = 20,
+    .species = SPECIES_MAWILE,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_SANDSTORM, MOVE_TOXIC, MOVE_PROTECT, MOVE_SUBSTITUTE}
     }
 };
 
@@ -3497,32 +3504,46 @@ static const struct TrainerMonItemCustomMoves sParty_Flannery1[] = {
 
 static const struct TrainerMonItemCustomMoves sParty_Norman1[] = {
     {
-    .iv = 200,
-    .lvl = 27,
-    .species = SPECIES_SPINDA,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_TEETER_DANCE, MOVE_PSYBEAM, MOVE_FACADE, MOVE_ENCORE}
+    .iv = 250,
+    .lvl = 30,
+    .species = SPECIES_SNORLAX,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_TOXIC, MOVE_PROTEXT, MOVE_SUBSTITUTE, MOVE_SLACK_OFF}
     },
     {
-    .iv = 200,
-    .lvl = 27,
-    .species = SPECIES_VIGOROTH,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_SLASH, MOVE_FACADE, MOVE_ENCORE, MOVE_FAINT_ATTACK}
-    },
-    {
-    .iv = 200,
-    .lvl = 29,
-    .species = SPECIES_LINOONE,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_SLASH, MOVE_BELLY_DRUM, MOVE_FACADE, MOVE_HEADBUTT}
+    .iv = 250,
+    .lvl = 30,
+    .species = SPECIES_BLISSEY,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_TOXIC, MOVE_PROTECT, MOVE_SUBSITUTE, MOVE_SOFT_BOILED}
     },
     {
     .iv = 250,
     .lvl = 31,
-    .species = SPECIES_SLAKING,
-    .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_COUNTER, MOVE_YAWN, MOVE_FACADE, MOVE_FAINT_ATTACK}
+    .species = SPECIES_SKARMORY,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_TOXIC, MOVE_SUBSTITUTE, MOVE_PROTECT, MOVE_ROOST}
+    },
+    {
+    .iv = 250,
+    .lvl = 32,
+    .species = SPECIES_VENUSAUR,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_TOXIC, MOVE_LEECH_SEED, MOVE_PROTECT, MOVE_SUBSTITUTE}
+    },
+{
+    .iv = 250,
+    .lvl = 32,
+    .species = SPECIES_STEELIX,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_TOXIC, MOVE_LEECH_SEED, MOVE_PROTECT, MOVE_SUBSTITUTE}
+    },
+ {
+    .iv = 250,
+    .lvl = 32,
+    .species = SPECIES_LINOONE,
+    .heldItem = ITEM_SCOPE_LENS,
+    .moves = {MOVE_BELLY_DRUM, MOVE_EXTREME_SPEED, MOVE_, MOVE_APE_MODE}
     }
 };
 
