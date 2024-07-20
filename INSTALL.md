@@ -150,9 +150,9 @@ Note that in msys2, Copy is Ctrl+Insert and Paste is Shift+Insert.
     <details>
         <summary><i>Notes...</i></summary>
 
-    >   Note 1: While not shown, msys uses forward slashes `/` instead of backwards slashes `\` as the directory separator.  
-    >   Note 2: If the path has spaces, then the path must be wrapped with quotations, e.g. `cd "Downloads/My Downloads"`.  
-    >   Note 3: Windows path names are case-insensitive so adhering to capitalization isn’t needed.   
+    >   Note 1: While not shown, msys uses forward slashes `/` instead of backwards slashes `\` as the directory separator.
+    >   Note 2: If the path has spaces, then the path must be wrapped with quotations, e.g. `cd "Downloads/My Downloads"`.
+    >   Note 3: Windows path names are case-insensitive so adhering to capitalization isn’t needed.
     >   Note 4: If libpng was saved elsewhere, you will need to specify the full path to where libpng was downloaded, e.g. `cd c:/devkitpro/msys2` if it was saved there.
     </details>
 
@@ -353,6 +353,13 @@ Then proceed to [Choosing where to store pokeemerald (Linux)](#choosing-where-to
 >   then you will have to install devkitARM. Install all the above packages except binutils-arm-none-eabi, and follow the instructions to
 >   [install devkitARM on Arch Linux](#installing-devkitarm-on-arch-linux).
 </details>
+
+### NixOS
+Run the following command to start an interactive shell with the necessary packages:
+```bash
+nix-shell -p pkgsCross.arm-embedded.stdenv.cc git pkg-config libpng
+```
+Then proceed to [Choosing where to store pokeemerald (Linux)](#choosing-where-to-store-pokeemerald-linux).
 
 ### Other distributions
 _(Specific instructions for other distributions would be greatly appreciated!)_
